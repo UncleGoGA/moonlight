@@ -5,72 +5,20 @@
         <link rel = "stylesheet" href = "../css/styles.css">
         <link rel = "stylesheet_startup" href = "../css/moonlight_startup.css">
         <title>Moonlight|Best way to find beat</title>
-        <!-- hover -->
-        <style>
-            div{
-                padding: 0;
-                margin: 0;
-            }
-            #body{
-                
-            }
-            #logo_mask:hover{
-                text-decoration-thickness: 3px;
-                text-decoration: underline;
-                text-decoration-color: orangered;
-            }
-            #sell_mask:hover{
-                text-decoration-thickness: 3px;
-                text-decoration: underline;
-                text-decoration-color: orangered;
-            }
-            #buy_mask:hover{
-                text-decoration-thickness: 3px;
-                text-decoration: underline;
-                text-decoration-color: orangered;
-            }
-            #community_mask:hover{
-                text-decoration-thickness: 3px;
-                text-decoration: underline;
-                text-decoration-color: orangered;
-            }
-        </style>
-        <!-- active -->
-        <style>
-            #logo_mask:active{
-                text-decoration: underline;
-                text-decoration-thickness: 3px;
-                text-decoration-color: rgba(255, 255, 255, 0.77);
-            }
-            #sell_mask:active{
-                text-decoration: underline;
-                text-decoration-thickness: 3px;
-                text-decoration-color: rgba(255, 255, 255, 0.77);
-            }
-            #buy_mask:active{
-                text-decoration: underline;
-                text-decoration-thickness: 3px;
-                text-decoration-color: rgba(255, 255, 255, 0.77);
-            }
-            #community_mask:active{
-                text-decoration: underline;
-                text-decoration-thickness: 3px;
-                text-decoration-color: rgba(255, 255, 255, 0.77);
-            }
-        </style>
     </head>
-    <body onresize="onBodyResize()" data-useragent = "chrome">
-        <img id = "background_body_img" src = "../pic/background.jpg">
+    <body>
+        <img id = "background_body_img">
         <div id = "whole_window">
             <video id = "background_video"></video>
             <!-- Top bar info with scroll menues and logo -->
             <div id = "top_bar">
                 <div id = "logo"></div>
-                <a href = "../html/moonlight_startup.html"></a>
+                <a href = "../html/moonlight_startup.html">
                     <div id = "logo_mask">
                         <img id = "logo_img" src = "../pic/"> 
                         <a href = "../html/moonlight_startup.html"id = "logo_text">Moonlight</a>
                     </div>
+                </a>
                 </div>
                 <div id = "selection_bar">
                     <div id = "sell">
@@ -91,7 +39,7 @@
                         <a href = "../html/moonlight_cab.html"></a>
                         <div id = "community_mask">
                             <!-- <img id = "community_img"> -->
-                            <a href = "../html/moonlight_cab.html">community</a>
+                            <a href = "../html/moonlight_cab.html" id = "community_text">community</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +48,9 @@
             <div id = "main">
                 <div id = "button">
                     <div id = "button_mask">
-                        <span id = "button_img"></span>
+                        <a id = "button_img" href = "../html/moonlight_main.html"></a>
+                        <a id = "button_text">just tab.<br>on the moon</a>
+                        <a id = "button_text_light">light</a>
                     </div>
                 </div>
             </div>
@@ -108,33 +58,48 @@
             <div id = "bottom_bar">
                 <div id = "bottom_bar_1_column">
                     <!-- Info about payment -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <a id = "bottom_sell_text">Sell<br></a>
+                    <div>
+                        <a>Pricing<br></a>
+                        <a>Why moonlight<br></a>
+                        <a>Selling tools<br></a>
+                        <a>AI Store<br></a>
+                    </div>
                 </div>
                 <div id = "bottom_bar_2_column">
                     <!-- Info about administration and jobs -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <a id = "bottom_buy_text">Buy<br></a>
+                    <div>
+                        <a>Browse Beats<br></a>
+                        <a>Top Selling Beats<br></a>
+                        <a>Recent Beats<br></a>
+                        <a>Free Beats<br></a>
+                    </div>
                 </div>
                 <div id = "bottom_bar_3_column">
                     <!-- Info about rules and helpdesk -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <a id = "bottom_community_text">Moonlight<br></a>
+                    <div>
+                        <a>Community<br></a>
+                        <a>About Us<br></a>
+                        <a>Privacy<br></a>
+                        <a>Temrs and Conditions<br></a>
+                        <a>Contact Us</a>
+                    </div>
                 </div>
-                <div id = "bottom_bar_logo">
+                <div id = "bottom_bar_4_column">
+                    <!-- Info how to follow us in social media -->
+                    <a id = "social_media_text">Follow Us</a>
+                    <img>
+                    <img>
+                    <img>
+                    <img>
+                </div>
+                <!-- <div id = "bottom_bar_logo">
                     <div id = "bottom_bar_logo_mask">
                         <img id = "bottom_bar_logo_img" src = "">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </body>
