@@ -2,39 +2,96 @@
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "../css/styles.css">
         <link rel = "stylesheet_startup" href = "../css/moonlight_startup.css">
         <title>Moonlight|Best way to find beat</title>
+        <!-- hover -->
+        <style>
+            div{
+                padding: 0;
+                margin: 0;
+            }
+            #body{
+                
+            }
+            #logo_mask:hover{
+                text-decoration-thickness: 3px;
+                text-decoration: underline;
+                text-decoration-color: orangered;
+            }
+            #sell_mask:hover{
+                text-decoration-thickness: 3px;
+                text-decoration: underline;
+                text-decoration-color: orangered;
+            }
+            #buy_mask:hover{
+                text-decoration-thickness: 3px;
+                text-decoration: underline;
+                text-decoration-color: orangered;
+            }
+            #community_mask:hover{
+                text-decoration-thickness: 3px;
+                text-decoration: underline;
+                text-decoration-color: orangered;
+            }
+        </style>
+        <!-- active -->
+        <style>
+            #logo_mask:active{
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: rgba(255, 255, 255, 0.77);
+            }
+            #sell_mask:active{
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: rgba(255, 255, 255, 0.77);
+            }
+            #buy_mask:active{
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: rgba(255, 255, 255, 0.77);
+            }
+            #community_mask:active{
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: rgba(255, 255, 255, 0.77);
+            }
+        </style>
     </head>
-    <body id = "background_body_img">
+    <body onresize="onBodyResize()" data-useragent = "chrome">
+        <img id = "background_body_img" src = "../pic/background.jpg">
         <div id = "whole_window">
             <video id = "background_video"></video>
             <!-- Top bar info with scroll menues and logo -->
             <div id = "top_bar">
-                <div id = "logo" onclick = "document.location = '../html/moonlight_main.html'"></div>
-                    <div id = "logo_mask" onclick = "document.location = '../html/moonlight_main.html'">
+                <div id = "logo"></div>
+                <a href = "../html/moonlight_startup.html"></a>
+                    <div id = "logo_mask">
                         <img id = "logo_img" src = "../pic/"> 
-                        <span id = "logo_text">Moonlight</span>
+                        <a href = "../html/moonlight_startup.html"id = "logo_text">Moonlight</a>
                     </div>
                 </div>
                 <div id = "selection_bar">
-                    <div id = "sell" onclick = "document.location = '../html/moonlight_offer.html'">
+                    <div id = "sell">
+                        <a href = "../html/moonlight_offer.html"></a>
                         <div id = "sell_mask">
                             <!-- <img id = "sell_img"> -->
-                            <span id = "sell_text">Sell</span>
+                            <a href = "../html/moonlight_offer.html" id = "sell_text">Sell</a>
                         </div>
                     </div>
-                    <div id = "buy" onclick = "document.location = '../html/moonlight_trade.html'">
+                    <div id = "buy">
+                        <a href = "../html/moonlight_trade.html"></a>
                         <div id = "buy_mask">
                             <!-- <img id = "buy_img"> -->
-                            <span id = "buy_text">Buy</span>
+                            <a href = "../html/moonlight_trade.html" id = "buy_text">Buy</a>
                         </div>
                     </div>
-                    <div id = "community" onclick = "document.location = '..html/moonlight_cab.html'">
+                    <div id = "community">
+                        <a href = "../html/moonlight_cab.html"></a>
                         <div id = "community_mask">
                             <!-- <img id = "community_img"> -->
-                            <span id = "community_text">community</span>
+                            <a href = "../html/moonlight_cab.html">community</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +132,7 @@
                 </div>
                 <div id = "bottom_bar_logo">
                     <div id = "bottom_bar_logo_mask">
-                        <div id = "bottom_bar_logo_img"></div>
+                        <img id = "bottom_bar_logo_img" src = "">
                     </div>
                 </div>
             </div>
