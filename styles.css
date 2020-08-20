@@ -1,8 +1,14 @@
+#body{
+    width: 100%;
+    height: 100%;
+
+}
+
 #background_body_img{
     position: absolute;
-    width: 99%;
-    height: 98%;
-    background: linear-gradient(to top, #c9c9c1 10%,#49bd3f 30%,#6bdb5ed8 50%, #37bb37ce 100%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.747) 0%, rgba(0, 0, 0, 0.699) 10%, rgba(33, 34, 53, 0.644) 15%, rgb(33, 34, 53) 30%);
 }
 
 #whole_window{
@@ -14,21 +20,21 @@
 #top_bar{
     left: 0px;
     top: 0px;
-    position: absolute  ;
+    position: absolute;
     width: 100%;
     height: 50px;
-    border: mintcream;
+    /* border: unset;
     border-bottom-style: solid;
-    border-bottom-color: mintcream;
-}
+    border-bottom-color: unset; */
 
+}
 #logo{
     position: absolute;
     width: 250px;
     height: 40px;
     left: 200px;
     top: 0px;
-    background: mintcream;
+    background: unset;
 }
 #logo_mask{
     top: 0px;
@@ -43,14 +49,16 @@
     background-color: black;
 }
 #logo_img{
-
+    background-color: none;
 }
 #logo_text{
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(255, 255, 255, 0.77);
     position: relative;
-    font-size: 20px;
-    left: 80px;
+    font-size: 40px;
+    left: 70px;
     text-align: right;
-    bottom: 5px;
+    bottom: 18px;
 }
 
 #selection_bar{
@@ -59,76 +67,89 @@
     left: 700px;
     width: 1100px;
     height: 40px;
-    background-color: blanchedalmond;
+    background-color: unset;
+    font-family: 'Bebas Neue', cursive;
 }
 #sell{
     top:0px;
-    left:0px;
+    left:50px;
     position: relative;
-    width:300px;
+    width:200px;
     height: 40px;
     background-color: unset;
 }
 #sell_mask{
-    top: 10px;
-    width: 300px;
+    top: 0px;
+    width: 200px;
     height: 40;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    border-top-left-radius:30px;
+    /* border-top-left-radius:30px;
     border-top-right-radius:30px;
     border-bottom-left-radius:30px;
     border-bottom-right-radius:30px;
+    background-color: blanchedalmond; */
 }
 #sell_text{
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.77);
+    position: relative;
+    top: 0px;
+    font-size: 35px;
 }
 #buy{
     top: 0px;
-    left: 400px;
-    width:300px;
+    left: 450px;
+    width:200px;
     height: 40px;
     background-color: unset;
     position: absolute;
 }
 #buy_mask{
-    top: 10px;
-    width: 300px;
+    top: 0px;
+    width: 200px;
     height: 40;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    border-top-left-radius:30px;
+    /* border-top-left-radius:30px;
     border-top-right-radius:30px;
     border-bottom-left-radius:30px;
     border-bottom-right-radius:30px;
+    background-color: blanchedalmond; */
 }
 #buy_text{
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.77);
+    position: relative;
+    top: 0px;
+    font-size: 35px;
 }
 #community{
     top: 0px;
-    left: 800px;
-    width: 300px;
+    left: 850px;
+    width: 200px;
     height: 40px;
     background-color: unset;
     position: absolute;
 }
 #community_mask{
-    top: 10px;
-    width: 300px;
+    top: 0px;
+    width: 200px;
     height: 40;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    border-top-left-radius:30px;
+    /* border-top-left-radius:30px;
     border-top-right-radius:30px;
     border-bottom-left-radius:30px;
     border-bottom-right-radius:30px;
-}
+    background-color: blanchedalmond;*/
+} 
 #community_text{
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.77);
+    position: relative;
+    top: 0px;
+    font-size: 35px;
 }
 
 #bottom_bar{
@@ -137,6 +158,7 @@ position: absolute;
 width: 100%;
 height: 100px;
 background-color: unset;
+font-family: 'Bebas Neue', cursive;
 }
 #bottom_bar_1_column{
 position: absolute;
